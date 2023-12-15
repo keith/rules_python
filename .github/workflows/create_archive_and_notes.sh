@@ -37,7 +37,7 @@ bazel_dep(name = "rules_python", version = "${TAG}")
 pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 
 pip.parse(
-    name = "pip",
+    hub_name = "pip",
     requirements_lock = "//:requirements_lock.txt",
 )
 
